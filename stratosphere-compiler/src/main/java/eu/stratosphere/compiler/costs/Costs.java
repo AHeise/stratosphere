@@ -357,9 +357,9 @@ public class Costs implements Comparable<Costs>, Cloneable {
 		// ---------- relative costs ----------
 		
 		this.heuristicNetworkCost -= other.heuristicNetworkCost;
-		if (this.heuristicNetworkCost < 0) {
-			throw new IllegalArgumentException("Cannot subtract more cost then there is.");
-		}
+//		if (this.heuristicNetworkCost < 0) {
+//			throw new IllegalArgumentException("Cannot subtract more cost then there is.");
+//		}
 		this.heuristicDiskCost -= other.heuristicDiskCost;
 		if (this.heuristicDiskCost < 0) {
 			throw new IllegalArgumentException("Cannot subtract more cost then there is.");
